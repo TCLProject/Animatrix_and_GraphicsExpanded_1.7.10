@@ -1,14 +1,14 @@
 [
 {
-  "modid": "animatrix",
-  "name": "Animatrix",
-  "description": "Library mod that provides support for skeleton based rendering.",
-  "version": "${version}",
+  "modid": "tclgraphics",
+  "name": "Animatrix for 1.7.10",
+  "description": "The animatrix animation library, ported for 1.7.10.",
+  "version": "1.0.2",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["LDT-Team"],
-  "credits": "",
+  "authorList": ["TCLProject"],
+  "credits": "The LDT Team for code for other minecraft versions (1.12.2).",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

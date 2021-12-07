@@ -1,12 +1,14 @@
 package com.ldtteam.animatrix.model.animation;
 
-import com.ldtteam.animatrix.model.skeleton.IJoint;
-import com.ldtteam.animatrix.util.math.QuaternionMath;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 import org.lwjgl.util.vector.Matrix4f;
 import org.lwjgl.util.vector.Quaternion;
 import org.lwjgl.util.vector.Vector3f;
+
+import com.ldtteam.animatrix.model.skeleton.IJoint;
+import com.ldtteam.animatrix.util.math.QuaternionMath;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 /**
  * Represents a single transform of a single {@link IJoint} in a {@link IKeyFrame}

@@ -1,10 +1,12 @@
 package com.ldtteam.animatrix.model.skeleton;
 
+import org.lwjgl.util.vector.Matrix4f;
+
 import com.ldtteam.animatrix.model.AnimatrixModel;
 import com.ldtteam.animatrix.util.array.ArrayUtility;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-import org.lwjgl.util.vector.Matrix4f;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 /**
  * Represents a skeleton in a {@link AnimatrixModel}.

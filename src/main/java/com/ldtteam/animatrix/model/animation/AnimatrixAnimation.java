@@ -1,20 +1,21 @@
 package com.ldtteam.animatrix.model.animation;
 
-import com.ldtteam.animatrix.model.IModel;
-import com.ldtteam.animatrix.model.skeleton.IJoint;
-import com.ldtteam.animatrix.util.animation.IJointTransformMath;
-import net.minecraft.client.Minecraft;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.TickEvent;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-import org.lwjgl.util.vector.Matrix4f;
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Consumer;
+
+import org.lwjgl.util.vector.Matrix4f;
+
+import com.ldtteam.animatrix.model.IModel;
+import com.ldtteam.animatrix.util.animation.IJointTransformMath;
+
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.gameevent.TickEvent;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.Minecraft;
+import net.minecraft.util.ResourceLocation;
 
 /**
  * Represents a simple animation in Animatix.
@@ -156,7 +157,7 @@ public class AnimatrixAnimation implements IAnimation
      */
     private float calculateProgression(final IKeyFrame previousFrame, final IKeyFrame nextFrame) {
         final float totalTime = nextFrame.getTicksAfterStart() - previousFrame.getTicksAfterStart();
-        final float currentTime = (animationTime + Minecraft.getMinecraft().getRenderPartialTicks()) - previousFrame.getTicksAfterStart();
+        final float currentTime = (animationTime + Minecraft.getMinecraft().timer.renderPartialTicks) - previousFrame.getTicksAfterStart();
         return currentTime / totalTime;
     }
 

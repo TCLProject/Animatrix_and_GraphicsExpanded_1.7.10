@@ -1,11 +1,11 @@
 package com.ldtteam.animatrix.model.skeleton;
 
-import com.google.common.collect.ImmutableCollection;
-import com.google.common.collect.ImmutableList;
-import org.jetbrains.annotations.NotNull;
+import java.util.Collection;
+
 import org.lwjgl.util.vector.Matrix4f;
 
-import java.util.Collection;
+import com.google.common.collect.ImmutableCollection;
+import com.google.common.collect.ImmutableList;
 
 /**
  * Represents a single joint/joint in a Skeleton.
@@ -118,7 +118,7 @@ public class AnimatrixJoint implements IJoint
      * @param parentModelSpaceBindTransform The parent model space transform.
      */
     @Override
-    public void calculateIMSBT(@NotNull final Matrix4f parentModelSpaceBindTransform)
+    public void calculateIMSBT(final Matrix4f parentModelSpaceBindTransform)
     {
         final Matrix4f msbt = Matrix4f.mul(parentModelSpaceBindTransform, jointSpaceBindTransform, null);
         Matrix4f.invert(msbt, inverseModelSpaceBindTransform);

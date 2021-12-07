@@ -1,24 +1,29 @@
 package com.ldtteam.animatrix.loader.animation;
 
-import com.ldtteam.animatrix.loader.data.AnimationData;
-import com.ldtteam.animatrix.loader.data.JointTransformData;
-import com.ldtteam.animatrix.loader.data.KeyFrameData;
-import com.ldtteam.animatrix.model.IModel;
-import com.ldtteam.animatrix.model.animation.*;
-import com.ldtteam.animatrix.util.math.QuaternionMath;
-import io.netty.util.internal.ConcurrentSet;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.lwjgl.util.vector.Matrix4f;
 import org.lwjgl.util.vector.Quaternion;
 import org.lwjgl.util.vector.Vector3f;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
+import com.ldtteam.animatrix.loader.data.AnimationData;
+import com.ldtteam.animatrix.loader.data.JointTransformData;
+import com.ldtteam.animatrix.loader.data.KeyFrameData;
+import com.ldtteam.animatrix.model.IModel;
+import com.ldtteam.animatrix.model.animation.AnimatrixAnimation;
+import com.ldtteam.animatrix.model.animation.AnimatrixJointTransform;
+import com.ldtteam.animatrix.model.animation.AnimatrixKeyFrame;
+import com.ldtteam.animatrix.model.animation.IAnimation;
+import com.ldtteam.animatrix.model.animation.IJointTransform;
+import com.ldtteam.animatrix.model.animation.IKeyFrame;
+import com.ldtteam.animatrix.util.math.QuaternionMath;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import io.netty.util.internal.ConcurrentSet;
+import net.minecraft.util.ResourceLocation;
 
 @SideOnly(Side.CLIENT)
 public class AnimationLoaderManager implements IAnimationLoaderManager

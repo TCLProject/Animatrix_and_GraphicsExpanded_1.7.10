@@ -1,11 +1,11 @@
 package com.ldtteam.animatrix.model.animator;
 
-import com.ldtteam.animatrix.model.animation.IAnimation;
-import net.minecraft.util.ITickable;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-
 import java.util.function.Consumer;
+
+import com.ldtteam.animatrix.model.animation.IAnimation;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 /**
  * Animators information for a animation and for example the amount of repetitions.

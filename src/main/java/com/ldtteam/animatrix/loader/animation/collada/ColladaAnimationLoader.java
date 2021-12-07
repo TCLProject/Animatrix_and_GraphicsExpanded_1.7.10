@@ -1,12 +1,13 @@
 package com.ldtteam.animatrix.loader.animation.collada;
 
 import com.ldtteam.animatrix.loader.animation.AnimationLoadingException;
-import com.ldtteam.animatrix.loader.data.*;
+import com.ldtteam.animatrix.loader.data.AnimationData;
 import com.ldtteam.animatrix.util.xml.XmlNode;
 import com.ldtteam.animatrix.util.xml.XmlParser;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 @SideOnly(Side.CLIENT)
 public class ColladaAnimationLoader implements com.ldtteam.animatrix.loader.animation.IAnimationLoader

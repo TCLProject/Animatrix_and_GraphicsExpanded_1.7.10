@@ -1,18 +1,22 @@
 package com.ldtteam.animatrix.model.animator;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+
+import org.lwjgl.util.vector.Matrix4f;
+
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.ldtteam.animatrix.model.AnimatrixModel;
 import com.ldtteam.animatrix.model.IModel;
 import com.ldtteam.animatrix.model.animation.IAnimation;
 import com.ldtteam.animatrix.model.skeleton.IJoint;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-import org.jetbrains.annotations.NotNull;
-import org.lwjgl.util.vector.Matrix4f;
 
-import java.util.*;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.util.ResourceLocation;
 
 /**
  * Handles the animation of {@link AnimatrixModel}
@@ -35,7 +39,7 @@ public class AnimatrixAnimator implements IAnimator
      * @param count The count.
      */
     @Override
-    public void startAnimation(@NotNull final IAnimation animation, int priority, final double count)
+    public void startAnimation(final IAnimation animation, int priority, final double count)
     {
         if (runningAnimations.stream().anyMatch(information -> information.getAnimation().getName().equals(animation.getName())))
             return;
@@ -55,7 +59,7 @@ public class AnimatrixAnimator implements IAnimator
      * @param name The name of the animation.
      */
     @Override
-    public void stopAnimation(@NotNull final ResourceLocation name)
+    public void stopAnimation(final ResourceLocation name)
     {
         final Optional<IAnimatorAnimationInformation> animationInformationOptional =
           runningAnimations.stream().filter(information -> information.getAnimation().getName().equals(name)).findFirst();

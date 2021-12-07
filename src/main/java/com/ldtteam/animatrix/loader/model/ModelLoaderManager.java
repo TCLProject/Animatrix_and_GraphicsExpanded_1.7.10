@@ -1,5 +1,8 @@
 package com.ldtteam.animatrix.loader.model;
 
+import java.util.Collection;
+import java.util.stream.Collectors;
+
 import com.ldtteam.animatrix.loader.data.AnimatedModelData;
 import com.ldtteam.animatrix.loader.data.JointData;
 import com.ldtteam.animatrix.loader.data.MeshData;
@@ -13,14 +16,11 @@ import com.ldtteam.animatrix.model.skin.AnimatrixSkin;
 import com.ldtteam.animatrix.model.skin.ISkin;
 import com.ldtteam.graphicsexpanded.gpu.GPUMemoryManager;
 import com.ldtteam.graphicsexpanded.gpu.VAO;
-import io.netty.util.internal.ConcurrentSet;
-import net.minecraft.client.model.ModelOcelot;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
-import java.util.Collection;
-import java.util.stream.Collectors;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import io.netty.util.internal.ConcurrentSet;
+import net.minecraft.util.ResourceLocation;
 
 @SideOnly(Side.CLIENT)
 public class ModelLoaderManager implements IModelLoaderManager

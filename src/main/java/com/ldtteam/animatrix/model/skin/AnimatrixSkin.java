@@ -2,9 +2,10 @@ package com.ldtteam.animatrix.model.skin;
 
 import com.ldtteam.animatrix.model.AnimatrixModel;
 import com.ldtteam.graphicsexpanded.gpu.VAO;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 /**
  * Represents the Skin of a {@link AnimatrixModel}

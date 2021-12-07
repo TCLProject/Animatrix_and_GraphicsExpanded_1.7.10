@@ -4,30 +4,7 @@
    It allows modder to use custom and beautifull animations and models created outside of the usual Minecraft programming paradigms, like with forexample Blender,
    and export those models and Animations to Collada, for use inside the Minecraft game engine.
    
-##### Website:
-https://www.github.com/ldtteam/animatrix
-
-
-For Users
---
-This mod is more for modders then for actuall users.
-
-
-Compiling Animatrix
-----
-
-IMPORTANT: Please report any issues you have, there might be some problems with the documentation! Also make sure you know EXACTLY what you're doing! It's not any of our faults if your OS crashes, becomes corrupted, etc.
-
-#### Setup Java
-The Java JDK is used to compile Animatrix
-
-1. Download and install the Java JDK 8.
-    * [Windows/Mac download link](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).  Scroll down, accept the `Oracle Binary Code License Agreement for Java SE`, and download it (if you have a 64-bit OS, please download the 64-bit version).
-	* Linux: Installation methods for certain popular flavors of Linux are listed below.  If your distribution is not listed, follow the instructions specific to your package manager or install it manually [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
-		* Gentoo: `emerge dev-java/oracle-jdk-bin`
-		* Archlinux: `pacman -S jdk8-openjdk`
-		* Ubuntu/Debian: `apt-get install openjdk-8-jdk`
-		* Fedora: `yum install java-1.8.0-openjdk`
+openjdk`
 2. Windows: Set environment variables for the JDK.
     * Go to `Control Panel\System and Security\System`, and click on `Advanced System Settings` on the left-hand side.
     * Click on `Environment Variables`.
